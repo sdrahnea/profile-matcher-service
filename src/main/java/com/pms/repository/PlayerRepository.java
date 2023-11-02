@@ -37,6 +37,8 @@ public class PlayerRepository {
     public boolean save(Player player, String playerId) {
         try {
             ObjectMapper mapper = new ObjectMapper();
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+            mapper.registerModule(new JavaTimeModule());
             ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
             writer.writeValue(new File("src/main/resources/players/player-" + playerId + ".json"), player);
 

@@ -5,11 +5,11 @@
 
     <groupId>com.pms</groupId>
     <artifactId>profile-matcher-service</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>file-management-system</name>
-    <description>File management system</description>
+    <name>profile-matcher-service</name>
+    <description>Profile Matcher Service</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
